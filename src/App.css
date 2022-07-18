@@ -1,38 +1,228 @@
 .App {
+  font-family: Ink Free;
+}
+
+.navbar {
+  background-color: #2c3942;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-title {
+  text-decoration: underline;
+  color:rgb(209, 185, 233);
+  display: inline-flex;
+}
+
+.icon {
+  display: inline-flex;
+  padding-top: 10px;
+}
+
+.info {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.info h3 {
+  color: black;
+  text-decoration: underline;
+  
+}
+
+.headContainer {
+  background-color: #28343b;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 35px;
+}
+
+
+.headContent h1, h2, h3{
+  color: #ffff;
+}
+
+
+.footer {
+  display: inline-block;
+  background-color: #2c3942;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.signature {
+  float: left;
+  margin-left: 10px;
+}
+
+.credits {
+  float: right;
+  margin-right: 10px;
+  color: #ffff;
+}
+
+.categoryCardContainer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  width: 250px;
+  height: 150px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px -1.2px 5px 1.2px rgb(46, 46, 48);
+  font-size: 25px;
+}
+
+.categoryCardContainer :hover {
+  background: #28343b;  
+  color: #fff;
+  padding: 5px;
+  font-size: 25px;
+  transform: rotate(0deg) scale(1) translateY(-5px);
+  transition: .5s all ease;
+ }
+
+.categories-container {
+  background-color: #f5f5f5;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding: 10px;
+  max-width: 100%;
+  display: grid;  
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 1rem;
+}
+
+.settingsCard {
+  background-color: #f5f5f5;
+  min-width: 650px;
+  height: 150px;
+  box-sizing: border-box;
+  display: table;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-title{
+  float: left;
+  min-width: 50%;
+  margin-top: 35px;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings {
+  margin-top: 25px;
+  float:left;
+  min-width: 50%;
+  align-items: center;
+}
+
+select {
+  padding: 8px;
+  min-width: 50%;
+  margin: 5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.start-button {
+  display: block;
+  margin: 0 auto;
+  background-color: #111827;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  line-height: 0.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.back-button {
+  display: block;
+  margin: 0 auto;
+  background-color: #111827;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  line-height: 0.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.quizContainer {
+  background: #28343b;
+  margin-top: 0.5rem;
+  padding: 5px;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.questionContainer {
+  margin-top: 1rem;
+  background: #FFFFFF;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 350px;
+  display: inline-block;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.scoreCard {
+  margin-top: 1rem;
+  background: #FFFFFF;
+  min-width: 350px;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 250px;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+
+.scoreCard h2 {
+  color: black !important;
+}
+.scoreCard h3 {
+  color: black !important;
+}
+
+.questionContent h3{
+  color: #080808
+}
+
+.question-button {
+  width: 50%;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #28343b;
+  border-radius: 10px;
+  padding: 8px;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border: 3px solid #234668;
+  font-family: Ink Free;
+  cursor: pointer;
+}
+
+.question-button:hover {
+  background-color: #40535f;
 }
