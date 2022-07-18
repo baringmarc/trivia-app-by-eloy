@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/trivia-app-by-eloy/static/css/main.fc1f6562.css",
+    "main.js": "/trivia-app-by-eloy/static/js/main.f25fda7d.js",
+    "static/js/787.9a6d5f81.chunk.js": "/trivia-app-by-eloy/static/js/787.9a6d5f81.chunk.js",
+    "static/media/trivia.png": "/trivia-app-by-eloy/static/media/trivia.b4198476eac05c24089a.png",
+    "index.html": "/trivia-app-by-eloy/index.html",
+    "main.fc1f6562.css.map": "/trivia-app-by-eloy/static/css/main.fc1f6562.css.map",
+    "main.f25fda7d.js.map": "/trivia-app-by-eloy/static/js/main.f25fda7d.js.map",
+    "787.9a6d5f81.chunk.js.map": "/trivia-app-by-eloy/static/js/787.9a6d5f81.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc1f6562.css",
+    "static/js/main.f25fda7d.js"
+  ]
+}
