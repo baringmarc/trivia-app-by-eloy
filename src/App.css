@@ -115,16 +115,35 @@
 }
 
 .settings-title{
-  float: left;
+  float: right;
   min-width: 50%;
-  margin-top: 35px;
+  margin-top: 15px;
   align-items: center;
   justify-content: center;
 }
 
+.name-title{
+  float: left;
+  min-width: 50%;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-input {
+  clear: left;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin-top: 10px;
+  
+}
+  
+
 .settings {
-  margin-top: 25px;
-  float:left;
+  margin-top: 5px;
+  float: right; 
+  clear: right;
   min-width: 50%;
   align-items: center;
 }
@@ -138,6 +157,7 @@ select {
 
 .start-button {
   display: block;
+  clear: both;
   margin: 0 auto;
   background-color: #111827;
   border: 1px solid transparent;

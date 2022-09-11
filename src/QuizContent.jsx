@@ -1,7 +1,7 @@
-import {useEffect, useState} from 'react'
+import {useState} from 'react'
 import QuestionCard from "./QuestionCard";
 
-const QuizContent = ({quiz}) => {
+const QuizContent = ({quiz, name}) => {
     const [currentQuestion, setCurrentQuestion] = useState(0)
         
 
@@ -10,7 +10,7 @@ const QuizContent = ({quiz}) => {
             
             
             <div className="quizContainer">
-                <QuestionCard question = {quiz[currentQuestion]} number = {currentQuestion} setCurrentQuestion = {setCurrentQuestion} quizLength = {quiz.length}/>
+                <QuestionCard question = {quiz[currentQuestion]} number = {currentQuestion} setCurrentQuestion = {setCurrentQuestion} quizLength = {quiz.length} name = {name}/>
             </div>
             
             

@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 import ScoreCard from './ScoreCard'
 
-const QuestionCard = ({question, number, setCurrentQuestion, quizLength}) => {
+const QuestionCard = ({question, number, setCurrentQuestion, quizLength, name}) => {
     const [choices, setChoices] = useState([])
     const [score, setScore] = useState(0)
     const [showScore, setShowScore] = useState(false)
@@ -29,8 +29,6 @@ const QuestionCard = ({question, number, setCurrentQuestion, quizLength}) => {
             choices.sort(() => Math.random() - .5)
             console.log(score)
         }
-        
-
 
     }, [question])
     
@@ -60,7 +58,7 @@ const QuestionCard = ({question, number, setCurrentQuestion, quizLength}) => {
                         </button>))}
                     </div>}
                 </div>
-            </div> : showScore === true ? <ScoreCard score = {score} total = {quizLength} /> : <div></div>}
+            </div> : showScore === true ? <ScoreCard score = {score} total = {quizLength} name = {name}/> : <div></div>}
         </div>
         
       );
