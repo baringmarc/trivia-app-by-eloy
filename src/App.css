@@ -12,7 +12,7 @@
 
 .nav-title {
   text-decoration: underline;
-  color:rgb(209, 185, 233);
+  color: rgb(209, 185, 233);
   display: inline-flex;
 }
 
@@ -29,7 +29,6 @@
 .info h3 {
   color: black;
   text-decoration: underline;
-  
 }
 
 .headContainer {
@@ -40,18 +39,17 @@
   padding: 35px;
 }
 
-
-.headContent h1, h2, h3{
+.headContent h1,
+h2,
+h3 {
   color: #ffff;
 }
-
 
 .footer {
   display: inline-block;
   background-color: #2c3942;
   overflow: hidden;
   width: 100%;
-
 }
 
 .signature {
@@ -81,13 +79,13 @@
 }
 
 .categoryCardContainer :hover {
-  background: #28343b;  
+  background: #28343b;
   color: #fff;
   padding: 5px;
   font-size: 25px;
   transform: rotate(0deg) scale(1) translateY(-5px);
-  transition: .5s all ease;
- }
+  transition: 0.5s all ease;
+}
 
 .categories-container {
   background-color: #f5f5f5;
@@ -95,7 +93,7 @@
   margin-bottom: 1rem;
   padding: 10px;
   max-width: 100%;
-  display: grid;  
+  display: grid;
   justify-content: space-evenly;
   justify-items: center;
   align-content: space-evenly;
@@ -114,7 +112,7 @@
   justify-content: center;
 }
 
-.settings-title{
+.settings-title {
   float: right;
   min-width: 50%;
   margin-top: 15px;
@@ -122,7 +120,7 @@
   justify-content: center;
 }
 
-.name-title{
+.name-title {
   float: left;
   min-width: 50%;
   margin-top: 15px;
@@ -136,13 +134,11 @@
   justify-content: center;
   padding: 8px;
   margin-top: 10px;
-  
 }
-  
 
 .settings {
   margin-top: 5px;
-  float: right; 
+  float: right;
   clear: right;
   min-width: 50%;
   align-items: center;
@@ -162,10 +158,10 @@ select {
   background-color: #111827;
   border: 1px solid transparent;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   line-height: 0.5rem;
-  padding: .75rem 1.2rem;
+  padding: 0.75rem 1.2rem;
   text-align: center;
 }
 
@@ -175,10 +171,10 @@ select {
   background-color: #111827;
   border: 1px solid transparent;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   line-height: 0.5rem;
-  padding: .75rem 1.2rem;
+  padding: 0.75rem 1.2rem;
   text-align: center;
 }
 
@@ -194,7 +190,7 @@ select {
 
 .questionContainer {
   margin-top: 1rem;
-  background: #FFFFFF;
+  background: #ffffff;
   width: 100%;
   padding: 15px;
   border-radius: 10px;
@@ -203,10 +199,9 @@ select {
   text-align: center;
 }
 
-
 .scoreCard {
   margin-top: 1rem;
-  background: #FFFFFF;
+  background: #ffffff;
   min-width: 350px;
   padding: 15px;
   border-radius: 10px;
@@ -223,8 +218,8 @@ select {
   color: black !important;
 }
 
-.questionContent h3{
-  color: #080808
+.questionContent h3 {
+  color: #080808;
 }
 
 .question-button {
