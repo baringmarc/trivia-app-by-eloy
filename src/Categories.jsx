@@ -1,46 +1,48 @@
-import { useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
 import CategoryCard from "./CategoryCard";
-import axios from 'axios';
+import { getCategories } from "./proxies/getCategories";
+
+const useCategories = () => {
+  const [categories, setCategories] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const fetchCategories = async () => {
+    await getCategories()
+      .then((returnedCategories) => {
+        setCategories(returnedCategories);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  };
+
+  useEffect(() => {
+    fetchCategories();
+  }, []);
+
+  return { categories, isLoading };
+};
 
 const Categories = () => {
-    const [categories, setCategories] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
+  const { categories, isLoading } = useCategories();
 
-    const fetchCategories = async () => {
-        await axios.get('https://the-trivia-api.com/api/categories')
-        .then(response => {
-            setCategories(response.data)
-            setIsLoading(false)
-            console.log(response.data)
-        })
-        .catch(err => {
-            console.log(err.message)
-        })
-    }
+  return (
+    <div>
+      <div className="info">
+        <h3>Choose from any of our available categories below! </h3>
+      </div>
+      {!isLoading ? (
+        <div className="categories-container">
+          {Object.keys(categories).map((category) => (
+            <CategoryCard category={category} key={category} />
+          ))}
+        </div>
+      ) : (
+        <div style={{ textAlign: "center" }}>No categories available :(</div>
+      )}
+    </div>
+  );
+};
 
-    useEffect(() => {
-        fetchCategories()
-    }, [])
-
-
-    return (
-        <div>
-            <div className="info">
-                <h3>Choose from any of our available categories below! </h3>
-            </div>
-        { !isLoading 
-            ? (<div className = "categories-container">
-                {Object.keys(categories).map((category, i) => (
-                    <CategoryCard category = {category} key = {i}/>
-                ))}
-            </div> )
-            : (<div style = {{textAlign: "center"}}>
-                No categories available :(
-            </div>)
-            }
-        
-        </div> 
-    );
-}
- 
 export default Categories;
